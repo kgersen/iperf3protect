@@ -2,16 +2,19 @@
 
 import json
 import sys
+import csv
 # todo: get ride of splitfile
 from splitstream import splitfile
 
-# debug: 300MB and 400MB
+
+csvwriter = csv.writer(sys.stdout)
 
 # accummulate volume per ip in a dict
 db = {}
 # this will yield each test as a parsed json
 objs = (json.loads(jsonstr) for jsonstr in splitfile(sys.stdin, format="json", bufsize=1))
-print("date,ip,duration,protocol,streams,cookie,sent,receive,totalsent,totalreceived")
+
+csvwriter.writerow(["date", "ip", "duration", "protocol", "num_streams", "cookie", "sent", "rcvd", "totalsent", "totalreceived"])
 for obj in objs:
     # caveat: assumes multiple streams are all from same IP so we take the 1st one
     ip = (obj["start"]["connected"][0]["remote_host"]).encode('ascii', 'ignore')
@@ -40,7 +43,7 @@ for obj in objs:
 
     db[ip] = (s, r)
 
-    print(time, ip, duration, protocol, num_streams, cookie, sent, rcvd, s, r)
+    csvwriter.writerow([time, ip, duration, protocol, num_streams, cookie, sent, rcvd, s, r])
 
 #    for i in db:
 #        (s, r) = db[i]
