@@ -1,42 +1,47 @@
-import json, sys
+#!/usr/bin/env python
+
+import json
+import sys
+# todo: get ride of splitfile
 from splitstream import splitfile
 
 # debug: 300MB and 400MB
-# todo: get these from cmd line parameters
-gMaxSend = 300*1000*1000
-gMaxReceive = 400*1000*1000
 
 # accummulate volume per ip in a dict
 db = {}
 # this will yield each test as a parsed json
 objs = (json.loads(jsonstr) for jsonstr in splitfile(sys.stdin, format="json", bufsize=1))
-print "ip,sent,received,direction"
+print("date,ip,duration,protocol,streams,cookie,sent,receive,totalsent,totalreceived")
 for obj in objs:
     # caveat: assumes multiple streams are all from same IP so we take the 1st one
-    ip   = obj["start"]["connected"][0]["remote_host"]
+    ip = (obj["start"]["connected"][0]["remote_host"]).encode('ascii', 'ignore')
     sent = obj["end"]["sum_sent"]["bytes"]
     rcvd = obj["end"]["sum_received"]["bytes"]
     reverse = obj["start"]["test_start"]["reverse"]
-    if reverse not in [0,1]:
-        print 'panic: unknown "reverse"'
-    print "  %s, %d, %d, %d" % (ip, sent , rcvd, reverse)
+    time = (obj["start"]["timestamp"]["time"]).encode('ascii', 'ignore')
+    cookie = (obj["start"]["cookie"]).encode('ascii', 'ignore')
+    protocol = (obj["start"]["test_start"]["protocol"]).encode('ascii', 'ignore')
+    duration = obj["start"]["test_start"]["duration"]
+    num_streams = obj["start"]["test_start"]["num_streams"]
+    if reverse not in [0, 1]:
+        sys.exit("unknown reverse")
+
     s = 0
     r = 0
     if ip in db:
-        (s,r) = db[ip]
+        (s, r) = db[ip]
 
     if reverse == 0:
-        r+=rcvd
+        r += rcvd
+        sent = 0
     else:
-        s+=sent
+        s += sent
+        rcvd = 0
 
-    db[ip]=(s,r)
-    
-    if (s>gMaxSend):
-        print "%s is over the send cap with %d" % (ip,s)
-    if (r>gMaxReceive):
-        print "%s is over the receive cap with %d" % (ip,r)
+    db[ip] = (s, r)
 
-    for i in db:
-       (s,r)=db[i]
-       print "%s, %d , %d " % (i,s,r)
+    print(time, ip, duration, protocol, num_streams, cookie, sent, rcvd, s, r)
+
+#    for i in db:
+#        (s, r) = db[i]
+#        print("%s, %d , %d " % (i, s, r))
