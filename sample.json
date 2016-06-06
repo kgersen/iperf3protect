@@ -14,7 +14,7 @@
                                 "remote_port":  50475
                         }],
                 "version":      "iperf 3.0.7",
-                "system_info":  "Linux vps204258.ovh.net 3.19.0-28-generic #30-Ubuntu SMP Mon Aug 31 15:52:51 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n",
+                "system_info":  "Linux x 3.19.0-28-generic #30-Ubuntu SMP Mon Aug 31 15:52:51 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n",
                 "timestamp":    {
                         "time": "Sun, 05 Jun 2016 19:26:03 GMT",
                         "timesecs":     1465154763

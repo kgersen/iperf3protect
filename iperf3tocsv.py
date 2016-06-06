@@ -24,18 +24,19 @@ for obj in objs:
     r = 0
     if ip in db:
         (s,r) = db[ip]
-    
+
     if reverse == 0:
         r+=rcvd
     else:
         s+=sent
-     
+
     db[ip]=(s,r)
+    
     if (s>gMaxSend):
         print "%s is over the send cap with %d" % (ip,s)
     if (r>gMaxReceive):
         print "%s is over the receive cap with %d" % (ip,r)
-       
+
     for i in db:
        (s,r)=db[i]
        print "%s, %d , %d " % (i,s,r)
