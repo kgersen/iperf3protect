@@ -7,7 +7,9 @@ import csv
 from splitstream import splitfile
 
 
-csvwriter = csv.writer(sys.stdout)
+csv.register_dialect('iperf3log', delimiter=',', quoting=csv.QUOTE_MINIMAL)
+
+csvwriter = csv.writer(sys.stdout, 'iperf3log')
 
 # accummulate volume per ip in a dict
 db = {}
