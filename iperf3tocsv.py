@@ -61,9 +61,11 @@ def main():
         if reverse == 0:
             r += rcvd
             sent = 0
+            sent_speed = 0
         else:
             s += sent
             rcvd = 0
+            rcvd_speed = 0
 
         db[ip] = (s, r)
 
