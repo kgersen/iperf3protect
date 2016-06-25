@@ -30,13 +30,20 @@ def main():
     # this will yield each test as a parsed json
     objs = (json.loads(jsonstr) for jsonstr in splitfile(sys.stdin, format="json", bufsize=1))
 
-    csvwriter.writerow(["date", "ip", "duration", "protocol", "num_streams", "cookie", "sent", "rcvd", "totalsent", "totalreceived"])
+    csvwriter.writerow(["date", "ip", "localport", "remoteport", "duration", "protocol", "num_streams", "cookie", "sent", "sent_mbps", "rcvd", "rcvd_mbps", "totalsent", "totalreceived"])
     for obj in objs:
         # caveat: assumes multiple streams are all from same IP so we take the 1st one
         # todo: handle errors and missing elements
         ip = (obj["start"]["connected"][0]["remote_host"]).encode('ascii', 'ignore')
+        local_port = obj["start"]["connected"][0]["local_port"]
+        remote_port = obj["start"]["connected"][0]["remote_port"]
+
         sent = obj["end"]["sum_sent"]["bytes"]
         rcvd = obj["end"]["sum_received"]["bytes"]
+        sent_speed = obj["end"]["sum_sent"]["bits_per_second"] / 1000 / 1000
+        rcvd_speed = obj["end"]["sum_received"]["bits_per_second"] / 1000 / 1000
+        
+
         reverse = obj["start"]["test_start"]["reverse"]
         time = (obj["start"]["timestamp"]["time"]).encode('ascii', 'ignore')
         cookie = (obj["start"]["cookie"]).encode('ascii', 'ignore')
@@ -60,7 +67,7 @@ def main():
 
         db[ip] = (s, r)
 
-        csvwriter.writerow([time, ip, duration, protocol, num_streams, cookie, sent, rcvd, s, r])
+        csvwriter.writerow([time, ip, local_port, remote_port, duration, protocol, num_streams, cookie, sent, sent_speed, rcvd, rcvd_speed, s, r])
     # for obj
     sys.exit(0)
 
