@@ -1,37 +1,77 @@
 #!/usr/bin/env python
 
 """
-    Version: 1.0
+    Version: 1.1
 
     Author: Kirth Gersen
     Date created: 6/5/2016
-    Date last modified: 6/7/2016
+    Date modified: 9/12/2016
     Python Version: 2.7
 
 """
 
+from __future__ import print_function
 import json
 import sys
 import csv
-# todo: get ride of splitfile
-from splitstream import splitfile
 
+db = {}
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 def main():
+    global db
     """main program"""
 
     csv.register_dialect('iperf3log', delimiter=',', quoting=csv.QUOTE_MINIMAL)
-
     csvwriter = csv.writer(sys.stdout, 'iperf3log')
+
+    if len(sys.argv) == 2:
+        if (sys.argv[1] != "-h"):
+            sys.exit("unknown option")
+        else:
+            csvwriter.writerow(["date", "ip", "localport", "remoteport", "duration", "protocol", "num_streams", "cookie", "sent", "sent_mbps", "rcvd", "rcvd_mbps", "totalsent", "totalreceived"])
+            sys.exit(0)
 
     # accummulate volume per ip in a dict
     db = {}
-    # this will yield each test as a parsed json
-    objs = (json.loads(jsonstr) for jsonstr in splitfile(sys.stdin, format="json", bufsize=1))
+    
+    # highly specific json parser
+    # assumes top { } pair are in single line
 
-    csvwriter.writerow(["date", "ip", "localport", "remoteport", "duration", "protocol", "num_streams", "cookie", "sent", "sent_mbps", "rcvd", "rcvd_mbps", "totalsent", "totalreceived"])
-    for obj in objs:
+    jsonstr = ""
+    i = 0
+    m = False
+    for line in sys.stdin:
+        i += 1
+        if line == "{\n":
+            jsonstr = "{"
+            #print("found open line %d",i)
+            m = True
+        elif line == "}\n":
+            jsonstr += "}"
+            #print("found close line %d",i)
+            if m:
+                process(jsonstr,csvwriter)
+            m = False
+            jsonstr = ""
+        else:
+            if m:
+                jsonstr += line
+            #else:
+                #print("bogus at line %d = %s",i,line)
+
+def process(js,csvwriter):
+    global db
+    #print(js)
+    try:
+        obj = json.loads(js)
+    except:
+        eprint("bad json")
+        pass
+        return False 
+    try:
         # caveat: assumes multiple streams are all from same IP so we take the 1st one
         # todo: handle errors and missing elements
         ip = (obj["start"]["connected"][0]["remote_host"]).encode('ascii', 'ignore')
@@ -70,9 +110,11 @@ def main():
         db[ip] = (s, r)
 
         csvwriter.writerow([time, ip, local_port, remote_port, duration, protocol, num_streams, cookie, sent, sent_speed, rcvd, rcvd_speed, s, r])
-    # for obj
-    sys.exit(0)
-
+        return True
+    except:
+       eprint("error or bogus test:", sys.exc_info()[0])
+       pass
+       return False
 
 def dumpdb(database):
     """ dump db to text """

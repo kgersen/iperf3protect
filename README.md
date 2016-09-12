@@ -7,4 +7,9 @@
  
 usage:
 
-iperf3 -s -J | python -u iperf3tocsv.py
+    iperf3 -s -J | python -u iperf3tocsv.py
+
+options:
+
+`python iperf3tocsv.py -u` will display the column headers and exit
+

@@ -1,0 +1,720 @@
+found open line %d 1
+found close line %d 11
+{	"start":	{
+		"connected":	[],
+		"version":	"iperf 3.1.3",
+		"system_info":	"Linux bouygues 4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016 x86_64"
+	},
+	"intervals":	[],
+	"end":	{
+	},
+	"error":	"interrupt - the server has terminated"
+}
+bogus at line %d = %s 12 ic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016 x86_64",
+
+bogus at line %d = %s 13 		"timestamp":	{
+
+bogus at line %d = %s 14 			"time":	"Thu, 04 Aug 2016 04:40:02 GMT",
+
+bogus at line %d = %s 15 			"timesecs":	1470285602
+
+bogus at line %d = %s 16 		},
+
+bogus at line %d = %s 17 		"accepted_connection":	{
+
+bogus at line %d = %s 18 			"host":	"81.109.178.225",
+
+bogus at line %d = %s 19 			"port":	49712
+
+bogus at line %d = %s 20 		},
+
+bogus at line %d = %s 21 		"cookie":	"insomniac.1470285602.150140.1c9a4c50",
+
+bogus at line %d = %s 22 		"tcp_mss_default":	1448,
+
+bogus at line %d = %s 23 		"test_start":	{
+
+bogus at line %d = %s 24 			"protocol":	"TCP",
+
+bogus at line %d = %s 25 			"num_streams":	1,
+
+bogus at line %d = %s 26 			"blksize":	131072,
+
+bogus at line %d = %s 27 			"omit":	0,
+
+bogus at line %d = %s 28 			"duration":	15,
+
+bogus at line %d = %s 29 			"bytes":	0,
+
+bogus at line %d = %s 30 			"blocks":	0,
+
+bogus at line %d = %s 31 			"reverse":	0
+
+bogus at line %d = %s 32 		}
+
+bogus at line %d = %s 33 	},
+
+bogus at line %d = %s 34 	"intervals":	[{
+
+bogus at line %d = %s 35 			"streams":	[{
+
+bogus at line %d = %s 36 					"socket":	5,
+
+bogus at line %d = %s 37 					"start":	0,
+
+bogus at line %d = %s 38 					"end":	1.000081,
+
+bogus at line %d = %s 39 					"seconds":	1.000081,
+
+bogus at line %d = %s 40 					"bytes":	266432,
+
+bogus at line %d = %s 41 					"bits_per_second":	2131283.741340,
+
+bogus at line %d = %s 42 					"omitted":	false
+
+bogus at line %d = %s 43 				}],
+
+bogus at line %d = %s 44 			"sum":	{
+
+bogus at line %d = %s 45 				"start":	0,
+
+bogus at line %d = %s 46 				"end":	1.000081,
+
+bogus at line %d = %s 47 				"seconds":	1.000081,
+
+bogus at line %d = %s 48 				"bytes":	266432,
+
+bogus at line %d = %s 49 				"bits_per_second":	2131283.741340,
+
+bogus at line %d = %s 50 				"omitted":	false
+
+bogus at line %d = %s 51 			}
+
+bogus at line %d = %s 52 		}, {
+
+bogus at line %d = %s 53 			"streams":	[{
+
+bogus at line %d = %s 54 					"socket":	5,
+
+bogus at line %d = %s 55 					"start":	1.000081,
+
+bogus at line %d = %s 56 					"end":	2.000098,
+
+bogus at line %d = %s 57 					"seconds":	1.000017,
+
+bogus at line %d = %s 58 					"bytes":	275120,
+
+bogus at line %d = %s 59 					"bits_per_second":	2200922.218666,
+
+bogus at line %d = %s 60 					"omitted":	false
+
+bogus at line %d = %s 61 				}],
+
+bogus at line %d = %s 62 			"sum":	{
+
+bogus at line %d = %s 63 				"start":	1.000081,
+
+bogus at line %d = %s 64 				"end":	2.000098,
+
+bogus at line %d = %s 65 				"seconds":	1.000017,
+
+bogus at line %d = %s 66 				"bytes":	275120,
+
+bogus at line %d = %s 67 				"bits_per_second":	2200922.218666,
+
+bogus at line %d = %s 68 				"omitted":	false
+
+bogus at line %d = %s 69 			}
+
+bogus at line %d = %s 70 		}, {
+
+bogus at line %d = %s 71 			"streams":	[{
+
+bogus at line %d = %s 72 					"socket":	5,
+
+bogus at line %d = %s 73 					"start":	2.000098,
+
+bogus at line %d = %s 74 					"end":	3.000097,
+
+bogus at line %d = %s 75 					"seconds":	0.999999,
+
+bogus at line %d = %s 76 					"bytes":	275120,
+
+bogus at line %d = %s 77 					"bits_per_second":	2200962.623752,
+
+bogus at line %d = %s 78 					"omitted":	false
+
+bogus at line %d = %s 79 				}],
+
+bogus at line %d = %s 80 			"sum":	{
+
+bogus at line %d = %s 81 				"start":	2.000098,
+
+bogus at line %d = %s 82 				"end":	3.000097,
+
+bogus at line %d = %s 83 				"seconds":	0.999999,
+
+bogus at line %d = %s 84 				"bytes":	275120,
+
+bogus at line %d = %s 85 				"bits_per_second":	2200962.623752,
+
+bogus at line %d = %s 86 				"omitted":	false
+
+bogus at line %d = %s 87 			}
+
+bogus at line %d = %s 88 		}, {
+
+bogus at line %d = %s 89 			"streams":	[{
+
+bogus at line %d = %s 90 					"socket":	5,
+
+bogus at line %d = %s 91 					"start":	3.000097,
+
+bogus at line %d = %s 92 					"end":	4.000097,
+
+bogus at line %d = %s 93 					"seconds":	1,
+
+bogus at line %d = %s 94 					"bytes":	276568,
+
+bogus at line %d = %s 95 					"bits_per_second":	2212544,
+
+bogus at line %d = %s 96 					"omitted":	false
+
+bogus at line %d = %s 97 				}],
+
+bogus at line %d = %s 98 			"sum":	{
+
+bogus at line %d = %s 99 				"start":	3.000097,
+
+bogus at line %d = %s 100 				"end":	4.000097,
+
+bogus at line %d = %s 101 				"seconds":	1,
+
+bogus at line %d = %s 102 				"bytes":	276568,
+
+bogus at line %d = %s 103 				"bits_per_second":	2212544,
+
+bogus at line %d = %s 104 				"omitted":	false
+
+bogus at line %d = %s 105 			}
+
+bogus at line %d = %s 106 		}, {
+
+bogus at line %d = %s 107 			"streams":	[{
+
+bogus at line %d = %s 108 					"socket":	5,
+
+bogus at line %d = %s 109 					"start":	4.000097,
+
+bogus at line %d = %s 110 					"end":	5.000096,
+
+bogus at line %d = %s 111 					"seconds":	0.999999,
+
+bogus at line %d = %s 112 					"bytes":	309872,
+
+bogus at line %d = %s 113 					"bits_per_second":	2478978.364138,
+
+bogus at line %d = %s 114 					"omitted":	false
+
+bogus at line %d = %s 115 				}],
+
+bogus at line %d = %s 116 			"sum":	{
+
+bogus at line %d = %s 117 				"start":	4.000097,
+
+bogus at line %d = %s 118 				"end":	5.000096,
+
+bogus at line %d = %s 119 				"seconds":	0.999999,
+
+bogus at line %d = %s 120 				"bytes":	309872,
+
+bogus at line %d = %s 121 				"bits_per_second":	2478978.364138,
+
+bogus at line %d = %s 122 				"omitted":	false
+
+bogus at line %d = %s 123 			}
+
+bogus at line %d = %s 124 		}, {
+
+bogus at line %d = %s 125 			"streams":	[{
+
+bogus at line %d = %s 126 					"socket":	5,
+
+bogus at line %d = %s 127 					"start":	5.000096,
+
+bogus at line %d = %s 128 					"end":	6.000089,
+
+bogus at line %d = %s 129 					"seconds":	0.999993,
+
+bogus at line %d = %s 130 					"bytes":	247608,
+
+bogus at line %d = %s 131 					"bits_per_second":	1980877.696063,
+
+bogus at line %d = %s 132 					"omitted":	false
+
+bogus at line %d = %s 133 				}],
+
+bogus at line %d = %s 134 			"sum":	{
+
+bogus at line %d = %s 135 				"start":	5.000096,
+
+bogus at line %d = %s 136 				"end":	6.000089,
+
+bogus at line %d = %s 137 				"seconds":	0.999993,
+
+bogus at line %d = %s 138 				"bytes":	247608,
+
+bogus at line %d = %s 139 				"bits_per_second":	1980877.696063,
+
+bogus at line %d = %s 140 				"omitted":	false
+
+bogus at line %d = %s 141 			}
+
+bogus at line %d = %s 142 		}, {
+
+bogus at line %d = %s 143 			"streams":	[{
+
+bogus at line %d = %s 144 					"socket":	5,
+
+bogus at line %d = %s 145 					"start":	6.000089,
+
+bogus at line %d = %s 146 					"end":	7.000097,
+
+bogus at line %d = %s 147 					"seconds":	1.000008,
+
+bogus at line %d = %s 148 					"bytes":	483632,
+
+bogus at line %d = %s 149 					"bits_per_second":	3869025.559230,
+
+bogus at line %d = %s 150 					"omitted":	false
+
+bogus at line %d = %s 151 				}],
+
+bogus at line %d = %s 152 			"sum":	{
+
+bogus at line %d = %s 153 				"start":	6.000089,
+
+bogus at line %d = %s 154 				"end":	7.000097,
+
+bogus at line %d = %s 155 				"seconds":	1.000008,
+
+bogus at line %d = %s 156 				"bytes":	483632,
+
+bogus at line %d = %s 157 				"bits_per_second":	3869025.559230,
+
+bogus at line %d = %s 158 				"omitted":	false
+
+bogus at line %d = %s 159 			}
+
+bogus at line %d = %s 160 		}, {
+
+bogus at line %d = %s 161 			"streams":	[{
+
+bogus at line %d = %s 162 					"socket":	5,
+
+bogus at line %d = %s 163 					"start":	7.000097,
+
+bogus at line %d = %s 164 					"end":	8.000097,
+
+bogus at line %d = %s 165 					"seconds":	1,
+
+bogus at line %d = %s 166 					"bytes":	1385736,
+
+bogus at line %d = %s 167 					"bits_per_second":	11085888,
+
+bogus at line %d = %s 168 					"omitted":	false
+
+bogus at line %d = %s 169 				}],
+
+bogus at line %d = %s 170 			"sum":	{
+
+bogus at line %d = %s 171 				"start":	7.000097,
+
+bogus at line %d = %s 172 				"end":	8.000097,
+
+bogus at line %d = %s 173 				"seconds":	1,
+
+bogus at line %d = %s 174 				"bytes":	1385736,
+
+bogus at line %d = %s 175 				"bits_per_second":	11085888,
+
+bogus at line %d = %s 176 				"omitted":	false
+
+bogus at line %d = %s 177 			}
+
+bogus at line %d = %s 178 		}, {
+
+bogus at line %d = %s 179 			"streams":	[{
+
+bogus at line %d = %s 180 					"socket":	5,
+
+bogus at line %d = %s 181 					"start":	8.000097,
+
+bogus at line %d = %s 182 					"end":	9.000096,
+
+bogus at line %d = %s 183 					"seconds":	0.999999,
+
+bogus at line %d = %s 184 					"bytes":	1372704,
+
+bogus at line %d = %s 185 					"bits_per_second":	10981642.472910,
+
+bogus at line %d = %s 186 					"omitted":	false
+
+bogus at line %d = %s 187 				}],
+
+bogus at line %d = %s 188 			"sum":	{
+
+bogus at line %d = %s 189 				"start":	8.000097,
+
+bogus at line %d = %s 190 				"end":	9.000096,
+
+bogus at line %d = %s 191 				"seconds":	0.999999,
+
+bogus at line %d = %s 192 				"bytes":	1372704,
+
+bogus at line %d = %s 193 				"bits_per_second":	10981642.472910,
+
+bogus at line %d = %s 194 				"omitted":	false
+
+bogus at line %d = %s 195 			}
+
+bogus at line %d = %s 196 		}, {
+
+bogus at line %d = %s 197 			"streams":	[{
+
+bogus at line %d = %s 198 					"socket":	5,
+
+bogus at line %d = %s 199 					"start":	9.000096,
+
+bogus at line %d = %s 200 					"end":	10.000097,
+
+bogus at line %d = %s 201 					"seconds":	1.000001,
+
+bogus at line %d = %s 202 					"bytes":	1403112,
+
+bogus at line %d = %s 203 					"bits_per_second":	11224885.295115,
+
+bogus at line %d = %s 204 					"omitted":	false
+
+bogus at line %d = %s 205 				}],
+
+bogus at line %d = %s 206 			"sum":	{
+
+bogus at line %d = %s 207 				"start":	9.000096,
+
+bogus at line %d = %s 208 				"end":	10.000097,
+
+bogus at line %d = %s 209 				"seconds":	1.000001,
+
+bogus at line %d = %s 210 				"bytes":	1403112,
+
+bogus at line %d = %s 211 				"bits_per_second":	11224885.295115,
+
+bogus at line %d = %s 212 				"omitted":	false
+
+bogus at line %d = %s 213 			}
+
+bogus at line %d = %s 214 		}, {
+
+bogus at line %d = %s 215 			"streams":	[{
+
+bogus at line %d = %s 216 					"socket":	5,
+
+bogus at line %d = %s 217 					"start":	10.000097,
+
+bogus at line %d = %s 218 					"end":	11.000096,
+
+bogus at line %d = %s 219 					"seconds":	0.999999,
+
+bogus at line %d = %s 220 					"bytes":	1446552,
+
+bogus at line %d = %s 221 					"bits_per_second":	11572427.036326,
+
+bogus at line %d = %s 222 					"omitted":	false
+
+bogus at line %d = %s 223 				}],
+
+bogus at line %d = %s 224 			"sum":	{
+
+bogus at line %d = %s 225 				"start":	10.000097,
+
+bogus at line %d = %s 226 				"end":	11.000096,
+
+bogus at line %d = %s 227 				"seconds":	0.999999,
+
+bogus at line %d = %s 228 				"bytes":	1446552,
+
+bogus at line %d = %s 229 				"bits_per_second":	11572427.036326,
+
+bogus at line %d = %s 230 				"omitted":	false
+
+bogus at line %d = %s 231 			}
+
+bogus at line %d = %s 232 		}, {
+
+bogus at line %d = %s 233 			"streams":	[{
+
+bogus at line %d = %s 234 					"socket":	5,
+
+bogus at line %d = %s 235 					"start":	11.000096,
+
+bogus at line %d = %s 236 					"end":	12.000070,
+
+bogus at line %d = %s 237 					"seconds":	0.999974,
+
+bogus at line %d = %s 238 					"bytes":	1410352,
+
+bogus at line %d = %s 239 					"bits_per_second":	11283109.221213,
+
+bogus at line %d = %s 240 					"omitted":	false
+
+bogus at line %d = %s 241 				}],
+
+bogus at line %d = %s 242 			"sum":	{
+
+bogus at line %d = %s 243 				"start":	11.000096,
+
+bogus at line %d = %s 244 				"end":	12.000070,
+
+bogus at line %d = %s 245 				"seconds":	0.999974,
+
+bogus at line %d = %s 246 				"bytes":	1410352,
+
+bogus at line %d = %s 247 				"bits_per_second":	11283109.221213,
+
+bogus at line %d = %s 248 				"omitted":	false
+
+bogus at line %d = %s 249 			}
+
+bogus at line %d = %s 250 		}, {
+
+bogus at line %d = %s 251 			"streams":	[{
+
+bogus at line %d = %s 252 					"socket":	5,
+
+bogus at line %d = %s 253 					"start":	12.000070,
+
+bogus at line %d = %s 254 					"end":	13.000096,
+
+bogus at line %d = %s 255 					"seconds":	1.000026,
+
+bogus at line %d = %s 256 					"bytes":	1355328,
+
+bogus at line %d = %s 257 					"bits_per_second":	10842342.233275,
+
+bogus at line %d = %s 258 					"omitted":	false
+
+bogus at line %d = %s 259 				}],
+
+bogus at line %d = %s 260 			"sum":	{
+
+bogus at line %d = %s 261 				"start":	12.000070,
+
+bogus at line %d = %s 262 				"end":	13.000096,
+
+bogus at line %d = %s 263 				"seconds":	1.000026,
+
+bogus at line %d = %s 264 				"bytes":	1355328,
+
+bogus at line %d = %s 265 				"bits_per_second":	10842342.233275,
+
+bogus at line %d = %s 266 				"omitted":	false
+
+bogus at line %d = %s 267 			}
+
+bogus at line %d = %s 268 		}, {
+
+bogus at line %d = %s 269 			"streams":	[{
+
+bogus at line %d = %s 270 					"socket":	5,
+
+bogus at line %d = %s 271 					"start":	13.000096,
+
+bogus at line %d = %s 272 					"end":	14.000096,
+
+bogus at line %d = %s 273 					"seconds":	1,
+
+bogus at line %d = %s 274 					"bytes":	1410352,
+
+bogus at line %d = %s 275 					"bits_per_second":	11282816,
+
+bogus at line %d = %s 276 					"omitted":	false
+
+bogus at line %d = %s 277 				}],
+
+bogus at line %d = %s 278 			"sum":	{
+
+bogus at line %d = %s 279 				"start":	13.000096,
+
+bogus at line %d = %s 280 				"end":	14.000096,
+
+bogus at line %d = %s 281 				"seconds":	1,
+
+bogus at line %d = %s 282 				"bytes":	1410352,
+
+bogus at line %d = %s 283 				"bits_per_second":	11282816,
+
+bogus at line %d = %s 284 				"omitted":	false
+
+bogus at line %d = %s 285 			}
+
+bogus at line %d = %s 286 		}, {
+
+bogus at line %d = %s 287 			"streams":	[{
+
+bogus at line %d = %s 288 					"socket":	5,
+
+bogus at line %d = %s 289 					"start":	14.000096,
+
+bogus at line %d = %s 290 					"end":	15.000096,
+
+bogus at line %d = %s 291 					"seconds":	1,
+
+bogus at line %d = %s 292 					"bytes":	1411800,
+
+bogus at line %d = %s 293 					"bits_per_second":	11294400,
+
+bogus at line %d = %s 294 					"omitted":	false
+
+bogus at line %d = %s 295 				}],
+
+bogus at line %d = %s 296 			"sum":	{
+
+bogus at line %d = %s 297 				"start":	14.000096,
+
+bogus at line %d = %s 298 				"end":	15.000096,
+
+bogus at line %d = %s 299 				"seconds":	1,
+
+bogus at line %d = %s 300 				"bytes":	1411800,
+
+bogus at line %d = %s 301 				"bits_per_second":	11294400,
+
+bogus at line %d = %s 302 				"omitted":	false
+
+bogus at line %d = %s 303 			}
+
+bogus at line %d = %s 304 		}, {
+
+bogus at line %d = %s 305 			"streams":	[{
+
+bogus at line %d = %s 306 					"socket":	5,
+
+bogus at line %d = %s 307 					"start":	15.000096,
+
+bogus at line %d = %s 308 					"end":	15.141942,
+
+bogus at line %d = %s 309 					"seconds":	0.141846,
+
+bogus at line %d = %s 310 					"bytes":	205616,
+
+bogus at line %d = %s 311 					"bits_per_second":	11596561.856222,
+
+bogus at line %d = %s 312 					"omitted":	false
+
+bogus at line %d = %s 313 				}],
+
+bogus at line %d = %s 314 			"sum":	{
+
+bogus at line %d = %s 315 				"start":	15.000096,
+
+bogus at line %d = %s 316 				"end":	15.141942,
+
+bogus at line %d = %s 317 				"seconds":	0.141846,
+
+bogus at line %d = %s 318 				"bytes":	205616,
+
+bogus at line %d = %s 319 				"bits_per_second":	11596561.856222,
+
+bogus at line %d = %s 320 				"omitted":	false
+
+bogus at line %d = %s 321 			}
+
+bogus at line %d = %s 322 		}],
+
+bogus at line %d = %s 323 	"end":	{
+
+bogus at line %d = %s 324 		"streams":	[{
+
+bogus at line %d = %s 325 				"sender":	{
+
+bogus at line %d = %s 326 					"socket":	5,
+
+bogus at line %d = %s 327 					"start":	0,
+
+bogus at line %d = %s 328 					"end":	15.141942,
+
+bogus at line %d = %s 329 					"seconds":	15.141942,
+
+bogus at line %d = %s 330 					"bytes":	0,
+
+bogus at line %d = %s 331 					"bits_per_second":	0
+
+bogus at line %d = %s 332 				},
+
+bogus at line %d = %s 333 				"receiver":	{
+
+bogus at line %d = %s 334 					"socket":	5,
+
+bogus at line %d = %s 335 					"start":	0,
+
+bogus at line %d = %s 336 					"end":	15.141942,
+
+bogus at line %d = %s 337 					"seconds":	15.141942,
+
+bogus at line %d = %s 338 					"bytes":	13535904,
+
+bogus at line %d = %s 339 					"bits_per_second":	7151475.803217
+
+bogus at line %d = %s 340 				}
+
+bogus at line %d = %s 341 			}],
+
+bogus at line %d = %s 342 		"sum_sent":	{
+
+bogus at line %d = %s 343 			"start":	0,
+
+bogus at line %d = %s 344 			"end":	15.141942,
+
+bogus at line %d = %s 345 			"seconds":	15.141942,
+
+bogus at line %d = %s 346 			"bytes":	0,
+
+bogus at line %d = %s 347 			"bits_per_second":	0
+
+bogus at line %d = %s 348 		},
+
+bogus at line %d = %s 349 		"sum_received":	{
+
+bogus at line %d = %s 350 			"start":	0,
+
+bogus at line %d = %s 351 			"end":	15.141942,
+
+bogus at line %d = %s 352 			"seconds":	15.141942,
+
+bogus at line %d = %s 353 			"bytes":	13535904,
+
+bogus at line %d = %s 354 			"bits_per_second":	7151475.803217
+
+bogus at line %d = %s 355 		},
+
+bogus at line %d = %s 356 		"cpu_utilization_percent":	{
+
+bogus at line %d = %s 357 			"host_total":	0.006655,
+
+bogus at line %d = %s 358 			"host_user":	0.000649,
+
+bogus at line %d = %s 359 			"host_system":	0.006003,
+
+bogus at line %d = %s 360 			"remote_total":	0,
+
+bogus at line %d = %s 361 			"remote_user":	0,
+
+bogus at line %d = %s 362 			"remote_system":	0
+
+bogus at line %d = %s 363 		}
+
+bogus at line %d = %s 364 	}
+
+found close line %d 365
+}
