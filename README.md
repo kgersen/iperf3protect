@@ -11,5 +11,5 @@ usage:
 
 options:
 
-`python iperf3tocsv.py -u` will display the column headers and exit
+`python iperf3tocsv.py -h` will display the column headers and exit
 
